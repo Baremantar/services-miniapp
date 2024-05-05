@@ -34,8 +34,8 @@ const onSubmit = (e) => {
   });
 
   axios.post(store.webhookUrl, formData)
-      .then(response => console.log(response))
-      .catch(error => console.log(error))
+      .then(response => alert('sucess!'))
+      .catch(error => alert(error))
 
 }
 </script>
