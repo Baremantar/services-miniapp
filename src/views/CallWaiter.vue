@@ -33,11 +33,7 @@ const onSubmit = (e) => {
     formData.append(key, data[key]);
   });
 
-  axios.post(store.webhookUrl, formData, {
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-    },
-  })
+  axios.post(store.webhookUrl, formData)
       .then(response => alert('sucess!'))
       .catch(error => alert(error))
 
